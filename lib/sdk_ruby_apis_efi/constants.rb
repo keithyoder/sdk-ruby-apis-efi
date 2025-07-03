@@ -383,6 +383,10 @@ module SdkRubyApisEfi
             route: "/v2/rec/",
             method: "get"
           },
+          getChargeRecurring: {
+            route: "/v2/cobr/:txid",
+            method: "get"
+          },
           listChargesRecurring: {
             route: "/v2/cobr",
             method: "get"
@@ -390,8 +394,11 @@ module SdkRubyApisEfi
           createLocationRecurring: {
             route: "/v2/locrec",
             method: "post"
+          },
+          createChargeRecurring: {
+            route: "/v2/cobr",
+            method: "post"
           }
-
         }
       }.freeze
 
