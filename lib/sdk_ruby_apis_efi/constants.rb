@@ -379,6 +379,10 @@ module SdkRubyApisEfi
             route: "/v2/rec/:id",
             method: "get"
           },
+          updatePixRecurring: {
+            route: "/v2/rec/:id",
+            method: "patch"
+          },
           listPixRecurring: {
             route: "/v2/rec/",
             method: "get"
@@ -398,7 +402,11 @@ module SdkRubyApisEfi
           createChargeRecurring: {
             route: "/v2/cobr",
             method: "post"
-          }
+          },
+          retryChargeRecurring: {
+            route: "/v2/cobr/:txid/retentativa/:data",
+            method: "post"
+          },
         }
       }.freeze
 
